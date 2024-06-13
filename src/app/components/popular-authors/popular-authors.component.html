@@ -1,0 +1,50 @@
+<div class="containerAuthor">
+  <div class="headerAuthor">
+    <div class="headerTextAuthor">
+      <h3>პოპულარული ავტორები</h3>
+      <h6>გაიცანი და გამოიწერე ყველაზე პოპულარული ავტორები.</h6>
+    </div>
+    <div class="headerButtonAuthor">
+      <a href=""><p>მეტი</p></a>
+      <a href=""><i class="bi bi-arrow-right-circle-fill"></i></a>
+    </div>
+  </div>
+  <div class="slider-wrapperAuthor">
+    <button
+      (click)="scrollLeft()"
+      class="scroll-buttonAuthor left-buttonAuthor"
+    >
+      <i class="bi bi-arrow-left-circle-fill"></i>
+    </button>
+    <ul class="image-listAuthor">
+      <li *ngFor="let author of authors.slice(0, 14)">
+        <img
+          [src]="author.avatar.fileUrl"
+          alt="{{ author.firstName }}"
+          class="author-imageAuthor"
+        />
+        <h4>{{ author.firstName }} {{ author.lastName }}</h4>
+        <div class="textsubAuthor">
+          <div>
+            <i class="bi bi-person-check-fill"></i>
+            <p>{{ author.subscribersCount }}</p>
+          </div>
+          <div>
+            <i class="bi bi-hand-index-thumb"></i>
+            <p>{{ author.likesCount }}</p>
+          </div>
+        </div>
+        <button (click)="viewProfile(author.id)" class="buttonAuthor">
+          გამოწერა
+          <i class="bi bi-person-check-fill"></i>
+        </button>
+      </li>
+    </ul>
+    <button
+      (click)="scrollRight()"
+      class="scroll-buttonAuthor right-buttonAuthor"
+    >
+      <i class="bi bi-arrow-right-circle-fill"></i>
+    </button>
+  </div>
+</div>

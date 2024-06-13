@@ -1,0 +1,173 @@
+$primary-color: var(--primary);
+$warning-color: var(--warning);
+$text-color-white: var(--text-color-white);
+
+.box {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+}
+
+.container {
+  background-image: url("/assets/images/coverNotAuthMob.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 550px;
+  width: 505px;
+  background-color: var(--components-white);
+  z-index: 1;
+  position: absolute;
+  top: 80px;
+  border-radius: 12px;
+  padding: 24px;
+  color: $text-color-white;
+}
+
+.bi-x {
+  position: absolute;
+  bottom: 500px;
+  left: 455px;
+  cursor: pointer;
+  font-size: 36px;
+}
+
+.europop {
+  width: 50px;
+  margin-bottom: 16px;
+}
+
+h4 {
+  width: 400px;
+  text-align: center;
+  font-size: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 36px;
+}
+
+input {
+  padding: 12px;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid rgb(97, 97, 97);
+  background: none;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Noto Serif Georgian", serif;
+  color: rgb(97, 97, 97);
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  width: 300px;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background-color: $primary-color;
+  color: #ffffff;
+  font-family: "Noto Serif Georgian", serif;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.7s;
+  margin-top: 24px;
+}
+
+button:hover {
+  background-color: $warning-color;
+}
+
+span {
+  display: flex;
+  gap: 5px;
+  margin-top: 24px;
+}
+
+a {
+  color: $primary-color;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+img {
+  cursor: pointer;
+}
+.app-login {
+  z-index: 2;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 300px;
+    height: 500px;
+    padding: 16px;
+    top: 50px;
+  }
+
+  h4 {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  input {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  button {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .bi-x {
+    font-size: 30px;
+    top: 1px;
+    right: 16px;
+    position: absolute;
+    left: 255px;
+    cursor: pointer;
+    font-size: 36px;
+  }
+
+  .europop {
+    width: 40px;
+  }
+
+  form {
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .socialmedia {
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  span {
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 16px;
+  }
+}

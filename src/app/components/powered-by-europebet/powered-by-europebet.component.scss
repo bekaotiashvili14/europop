@@ -1,0 +1,177 @@
+.poweredImageContainer {
+  max-width: 400px;
+  width: 100%;
+  background-image: url("/assets/images/poweredBy.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 1000px;
+  border-radius: 16px;
+  padding: 16px;
+
+  header {
+    width: 100%;
+  }
+
+  .poweredBox {
+    width: 330px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .poweredBoxLarge {
+      border-radius: 16px;
+      width: 100%;
+      background-color: var(--white-change);
+
+      .largeImage {
+        border-radius: 16px 16px 0 0;
+        width: 100%;
+        height: 180px;
+        cursor: pointer;
+      }
+
+      .poweredBoxLargeText {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        padding: 16px;
+
+        span {
+          display: flex;
+          gap: 8px;
+          justify-content: left;
+          align-items: center;
+          font-size: 16px;
+          color: var(--text-color-black);
+          cursor: pointer;
+
+          .largeAuthorImage {
+            border-radius: 50px;
+            cursor: pointer;
+          }
+        }
+
+        h5 {
+          a {
+            overflow: hidden;
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 14px;
+            cursor: pointer;
+          }
+        }
+
+        h2 {
+          a {
+            overflow: hidden;
+            color: var(--text-color-black);
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .poweredBoxSmall {
+      border-radius: 16px;
+      width: 100%;
+      background-color: var(--white-change);
+      display: flex;
+      justify-content: left;
+      align-items: start;
+      gap: 24px;
+      padding: 16px;
+
+      .smallImage {
+        border-radius: 16px;
+        cursor: pointer;
+      }
+
+      .poweredBoxSmallText {
+        padding: 2px;
+        width: 100%;
+
+        h5 {
+          a {
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 10px;
+            cursor: pointer;
+            overflow: hidden;
+          }
+        }
+
+        h2 {
+          text-align: left;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          a {
+            color: var(--text-color-black);
+            font-weight: 500;
+            font-size: 12px;
+            cursor: pointer;
+            overflow: hidden;
+          }
+        }
+
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+
+          .smallAuthorImage {
+            border-radius: 50px;
+          }
+
+          b {
+            font-size: 10px;
+            color: var(--text-color-black);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .moreBox {
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0 30px;
+    gap: 5px;
+
+    b {
+      font-weight: 600;
+      color: var(--primary);
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .bi-arrow-right-circle-fill {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--primary);
+      cursor: pointer;
+    }
+  }
+}
+
+a:hover {
+  color: var(--primary);
+}

@@ -1,1 +1,70 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/ng-zorro-antd/ng-zorro-antd.min.css";
+:root {
+  --primary: #f15a22;
+  --gray: #eef0f5;
+  --lightGray: #cfcfcf;
+  --secondary: #ff8469;
+  --success: #369d34;
+  --danger: #ff3b3b;
+  --warning: #ff7a00;
+  --blue: #4e82e8;
+  --icon: black;
+  --components-white: rgb(240, 240, 240);
+  --components-black: rgb(36, 35, 35);
+  --components-black-more: rgb(24, 23, 23);
+  --components-white-more: rgb(209, 207, 207);
+  --text-color-white: #fff;
+  --text-color-black: #000;
+  --europop-grey: #747474;
+  --white-change: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--components-white);
+  font-family: "Noto sans Georgian";
+  font-weight: 400;
+  line-height: 1.3;
+  font-size: 14px;
+  color: var(--text-color-black);
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  &.dark-mode {
+    --white-change: var(--components-black-more);
+    --europop-grey: #ffff;
+    --components-white: var(--components-black);
+    --text-color-black: var(--text-color-white);
+    --components-white-more: var(--components-black-more);
+    transition: 0.5s;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  width: 5px;
+
+  &:hover {
+    background: var(--warning);
+    width: 5px;
+  }
+}
+
+a {
+  color: var(--text-color-black);
+  text-decoration: none;
+}

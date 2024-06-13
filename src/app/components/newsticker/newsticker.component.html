@@ -1,0 +1,31 @@
+<div class="containerNewsticker">
+  <header>
+    <h3>NEWSTICKER</h3>
+    <h5>მეტი ბოლო სიახლე</h5>
+  </header>
+  <div class="boxNewsticker">
+    <div class="leftNewsticker">
+      <div
+        class="leftNewstickerText"
+        *ngFor="let post of newsPosts.data.slice(0, 7)"
+      >
+        <b
+          ><a href="posts/details/{{ post.id }}">{{ post.title }}</a></b
+        >
+        <a href="posts/details/{{ post.id }}">
+          <i class="bi bi-arrow-right-circle"></i
+        ></a>
+      </div>
+    </div>
+    <div class="rightNewsticker">
+      <div *ngFor="let post of newsPosts.data.slice(7, 14)">
+        <b class="rightNewstickerText"
+          ><a href="posts/details/{{ post.id }}">{{ post.title }}</a></b
+        >
+        <a href="posts/details/{{ post.id }}"
+          ><i class="bi bi-arrow-right-circle"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+</div>

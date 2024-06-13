@@ -1,0 +1,53 @@
+.classlink {
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding: 12px;
+  background-color: var(--white-change);
+  border-radius: 16px;
+  header {
+    font-family: "Noto Sans Georgian", sans-serif;
+    width: 300px;
+
+    h3 {
+      font-family: "Roboto", sans-serif;
+      color: var(--text-color-black);
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+  .social_box {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    width: 300px;
+    align-items: center;
+
+    .img_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      a {
+        color: var(--text-color-black);
+        font-weight: 500;
+      }
+      .bi {
+        font-size: 20px;
+      }
+      .bi-facebook {
+        color: #4343ff;
+      }
+
+      .bi-instagram {
+        color: var(--text-color-black);
+      }
+
+      .bi-youtube {
+        color: red;
+      }
+    }
+  }
+}

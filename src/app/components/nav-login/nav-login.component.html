@@ -1,0 +1,41 @@
+<div #sliderContainer class="slider-container">
+  <div *ngIf="loginVisible" class="box">
+    <div class="container">
+      <i class="bi bi-x" (click)="toggleLogin()"></i>
+      <header>
+        <img src="assets/images/eplus.png" alt="epop image" class="europop" />
+      </header>
+      <h4>
+        აღმოაჩინე europop-ის უახლესი სტატიები, ითამაშე ქვიზები და მოუსმინე
+        პოდკასტებს და ჩაერთე დისკუსიებში
+      </h4>
+      <form action="">
+        <input type="text" placeholder="ელფოსტა*" />
+        <input type="password" placeholder="პაროლი*" />
+        <button>ავტორიზაცია</button>
+      </form>
+      <span>
+        <p>დაგავიწყდა პაროლი?</p>
+        <a href="">პაროლის აღდგენა</a>
+      </span>
+      <div class="socialmedia">
+        <img
+          src="assets/svg/socialmedia/google-icon-logo-svgrepo-com.svg"
+          alt="google-icon-logo-svgrepo-com"
+        />
+        <img
+          src="assets/svg/socialmedia/facebook-color-svgrepo-com.svg"
+          alt="facebook"
+        />
+        <img
+          src="assets/svg/socialmedia/apple-173-svgrepo-com.svg"
+          alt="apple-173-svgrepo-com"
+        />
+      </div>
+      <span>
+        <p>არ გაქვს ანგარიში?</p>
+        <a href="">რეგისტრაცია</a>
+      </span>
+    </div>
+  </div>
+</div>

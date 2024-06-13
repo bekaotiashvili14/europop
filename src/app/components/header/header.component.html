@@ -1,0 +1,75 @@
+<div class="containerHeaderPage">
+  <h1>გაეცანი შენზე მორგებულ სპორტულ სიახლეებსა და ანალიტიკურ სტატიებს.</h1>
+  <button>
+    <a href="#">რეგისტრაცია</a>
+  </button>
+
+  <div class="containerBox">
+    <div class="leftLargeBox">
+      <div class="largeBox" *ngFor="let item of mainPosts.slice(0, 1)">
+        <a href="posts/details/{{ item.id }}">
+          <img [src]="item.image.fileUrl" alt="" class="largeImage"
+        /></a>
+        <span>
+          <h6>
+            <a href="posts/details/{{ item.id }}">{{ item.subtitle }}</a>
+          </h6>
+          <h4>
+            <a href="posts/details/{{ item.id }}">{{ item.title }}</a>
+          </h4>
+          <div class="news-meta">
+            <div class="news-meta-text">
+              <p>{{ item.publishedAt | timeAgo }}</p>
+            </div>
+            <div class="news-meta-text">
+              <i class="bi bi-hand-index"></i>
+              <i class="bi bi-chat-left-text"></i>
+              <i class="bi bi-save-fill"></i>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+    <div class="rightSmallBoxs">
+      <div class="smallBox" *ngFor="let item of mainPosts.slice(1, 5)">
+        <a href="posts/details/{{ item.id }}">
+          <img [src]="item.image.fileUrl" alt="" class="smallImage"
+        /></a>
+        <span>
+          <h6>
+            <a href="posts/details/{{ item.id }}">{{ item.subtitle }}</a>
+          </h6>
+          <h4>
+            <a href="posts/details/{{ item.id }}">{{ item.title }}</a>
+          </h4>
+          <div class="news-meta">
+            <div class="news-meta-text">
+              <p>{{ item.publishedAt | timeAgo }}</p>
+            </div>
+            <div class="news-meta-text">
+              <i class="bi bi-hand-index"></i>
+              <i class="bi bi-chat-left-text"></i>
+              <i class="bi bi-save-fill"></i>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="carouselBox">
+    <nz-carousel nzAutoPlay [nzEffect]="effect" [nzLoop]="false">
+      <div *ngFor="let post of mainPosts" nz-carousel-content>
+        <a href="posts/details/{{ post.id }}">
+          <img
+            [src]="post.image.fileUrl"
+            alt="{{ post.subtitle }}"
+            class="imageCarousel"
+          />
+        </a>
+        <h3>
+          <a href="posts/details/{{ post.id }}">{{ post.title }}</a>
+        </h3>
+      </div>
+    </nz-carousel>
+  </div>
+</div>

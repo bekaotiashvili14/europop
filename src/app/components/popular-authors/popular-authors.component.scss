@@ -1,0 +1,144 @@
+.containerAuthor {
+  background-color: var(--components-white-more);
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px;
+  border-radius: 16px;
+
+  .headerButtonAuthor {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 8px;
+
+    p {
+      font-size: 20px;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .bi-arrow-right-circle-fill {
+      font-size: 20px;
+      color: var(--primary);
+      font-weight: 600;
+    }
+  }
+
+  .headerAuthor {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+
+    .headerTextAuthor {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      h3 {
+        color: var(--text-color-black);
+        font-weight: 600;
+        font-size: 24px;
+      }
+
+      h6 {
+        color: #8b8b8b;
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .slider-wrapperAuthor {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .scroll-buttonAuthor {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 24px;
+      color: var(--primary);
+      position: absolute;
+      top: 100%;
+      transform: translateY(-50%);
+      z-index: 1;
+
+      &.left-buttonAuthor {
+        left: 0;
+      }
+
+      &.right-buttonAuthor {
+        right: 0;
+      }
+    }
+
+    .image-listAuthor {
+      display: grid;
+      grid-template-columns: repeat(16, 1fr);
+      gap: 18px;
+      font-size: initial;
+      list-style: none;
+      margin-bottom: 30px;
+      overflow-x: hidden;
+      border-radius: 16px;
+
+      li {
+        text-align: center;
+        background-color: var(--components-white);
+        gap: 10px;
+        border-radius: 16px;
+        padding: 16px 30px 0 30px;
+      }
+    }
+
+    .author-imageAuthor {
+      width: 190px;
+      object-fit: cover;
+      height: 160px;
+      border-radius: 16px;
+      margin-bottom: 6px;
+      cursor: pointer;
+    }
+
+    .textsubAuthor {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 12px 0;
+      gap: 44px;
+
+      div {
+        display: flex;
+        gap: 5px;
+        cursor: pointer;
+      }
+    }
+
+    h4 {
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 10px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 13px;
+    }
+  }
+
+  .buttonAuthor {
+    padding: 12px 24px;
+    border: none;
+    background-color: var(--primary);
+    color: #ffffff;
+    font-family: "Noto Serif Georgian", serif;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 24px;
+  }
+}
